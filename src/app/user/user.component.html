@@ -1,0 +1,38 @@
+
+<h4>UserList</h4>
+<div class="container">
+
+    <div *ngFor="let obj of userlist; let i = index; trackBy: trackByFn">
+        
+<div class="row">
+   
+        <div class="col-md-3">
+            <div class="form-group">
+    {{obj.firstname}}
+</div>
+</div>
+
+<div class="col-md-3">
+
+    <div class="form-group">
+    {{obj.lastname}}
+</div>
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+    {{obj.phone}}
+</div>
+</div>
+
+<div class="col-md-3">
+     <div class="form-group">
+    {{obj.address}}
+</div>
+</div>
+</div>
+</div>
+
+<app-add-user (valueonChanges)="ChangesList($event)"></app-add-user>
+
+
+

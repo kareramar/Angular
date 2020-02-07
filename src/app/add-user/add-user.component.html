@@ -1,0 +1,31 @@
+    <form [formGroup]="myForm">
+<div class="row">
+<div class="col-md-6">
+    <div class="form-group">
+        <input formControlName="firstname" placeholder="firstname">
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="form-group">
+        <input formControlName="lastname" placeholder="lastname">
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="form-group">
+        <input formControlName="phone" placeholder="phone">
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="form-group">
+        <input formControlName="address" placeholder="address">
+    </div>
+</div>
+</div>
+<div class="btns text-right">
+<button class="btn btn-success" (click)="onSave(myForm.value)">Save</button>
+</div>
+    </form>
+
