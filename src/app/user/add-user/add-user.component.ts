@@ -1,6 +1,6 @@
 import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import {UserService} from '../user.service'
+import {UserService} from '../../user.service'
 
 @Component({
   selector: 'app-add-user',
