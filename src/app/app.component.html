@@ -1,2 +1,4 @@
 
-<app-user></app-user>
+<app-user [userlist]="userlist"></app-user>
+<app-add-user (valueonChanges)="ChangesList($event)"></app-add-user>
+<router-outlet></router-outlet>

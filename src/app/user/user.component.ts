@@ -8,24 +8,26 @@ import {User} from '../user';
   providers:[UserService]
 })
 export class UserComponent implements OnInit {
-userlist:any=[];
+// userlist:any=[];
 user:User;
+@Input()  userlist;
   constructor(private userService:UserService) {
    
    }
   ngOnInit() {
-    this.getList()
+   // this.getList()
   }
 
-getList() {
-  this.userService.getList().subscribe(uservalues=>{
-    //  console.log(user);
-      this.userlist=uservalues;
-    })
-}
+// getList() {
+//   this.userService.getList().subscribe(uservalues=>{
+//     //  console.log(user);
+//       this.userlist=uservalues;
+//     })
+// }
 
 ChangesList(data) {
-  this.getList();
+ // this.getList();
 }
+
 
 }
